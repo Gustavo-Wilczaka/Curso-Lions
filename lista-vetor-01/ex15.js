@@ -1,10 +1,15 @@
-let nums = [9, 2, 3, 4, 5, 6]
+let nums = [1, 2, 3, 4, 5, 6]
 
-let cresente= "sim"
+let cresente = true;
 
-for (let i = 0; i < nums.length; i++) {
- if(nums[i]> nums[i]+1){
-    cresente= "nao"
- }
+for (let i = 0; i < nums.length - 1; i++) {
+    if (nums[i] > nums[i + 1]) {
+        cresente = false;
+    }
 }
-console.log("a sequencia atual é crescente?" ,  cresente)
+if (cresente) {
+    console.log("a sequencia atual é crescente")
+} else {
+    console.log("a sequencia atual é decrescente")
+}
+
