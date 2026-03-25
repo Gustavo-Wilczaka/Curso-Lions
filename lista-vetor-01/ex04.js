@@ -6,5 +6,5 @@ for (let i = 0; i < nums.length; i++) {
     media = media + nums[i]
 
 }
-media= media/nums.length;
+media = media / nums.length;
 console.log(media)
